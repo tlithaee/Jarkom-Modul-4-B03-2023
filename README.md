@@ -71,6 +71,77 @@ Penggabungan yang sebelumnya telah berhasil akan dicatat di excel serta netmask 
 
 ### Config Cisco Packet Tracer
 
+- A1
+  - Fern (Router)
+    ```
+    IPv4 Address  : 10.8.24.1
+    Subnet Mask   : 255.255.248.0
+
+    ```
+
+  - AppetitRegion (Client)
+    ```
+    IPv4 Address  : 10.8.24.2
+    Subnet Mask   : 255.255.248.0
+
+    ```
+
+  - LaubHills (Client)
+    ```
+    IPv4 Address  : 10.8.24.3
+    Subnet Mask   : 255.255.248.0
+
+    ```
+
+- A2
+  - Flamme (Router)
+    ```
+    IPv4 Address  : 10.8.12.1
+    Subnet Mask   : 255.255.252.0
+
+    ```
+
+  - RorhRoad (Client)
+    ```
+    IPv4 Address  : 10.8.12.2
+    Subnet Mask   : 255.255.252.0
+
+    ```
+
+- A3
+  - Himmel (Router)
+    ```
+    IPv4 Address  : 10.8.0.2
+    Subnet Mask   : 255.255.255.248
+
+    ```
+
+  - Schwer Mountains (Client)
+    ```
+    IPv4 Address  : 10.8.0.1
+    Subnet Mask   : 255.255.255.248
+
+    ```
+
+- A4
+- A5
+- A6
+- A7
+- A8
+- A9
+- A10
+- A11
+- A12
+- A13
+- A14
+- A15
+- A16
+- A17
+- A18
+- A19
+- A20
+- A21
+
 ### Routing
 ![](img/CIDR/r.1.png)
 ![](img/CIDR/r.2.png)
