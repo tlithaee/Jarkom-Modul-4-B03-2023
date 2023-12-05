@@ -30,6 +30,20 @@ Berikut adalah laporan resmi untuk praktikum modul 4 jarkom.
 
 ## Rute
 
+### VLSM
+
+### CIDR
+![a](image-1.png)
+![b](img/CIDR/b.png)
+![c](img/CIDR/c.png)
+![d](img/CIDR/d.png)
+![e](img/CIDR/e.png)
+![f](img/CIDR/f.png)
+![g](img/CIDR/g.png)
+![h](img/CIDR/h.png)
+![i](img/CIDR/i.png)
+![j](img/CIDR/j.png)
+
 ## VLSM
 ### Tree
 ### Pembagian IP
