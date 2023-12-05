@@ -74,3 +74,14 @@ Penggabungan yang sebelumnya telah berhasil akan dicatat di excel serta netmask 
 ### Routing
 
 ### Testing
+Router - Router 
+
+![](img/CIDR/router%20-%20router.png)
+
+Router - Client
+
+![](img/CIDR/router%20-%20client.png)
+
+Client - Client
+
+![](img/CIDR/client%20-%20client.png)
