@@ -72,6 +72,11 @@ Penggabungan yang sebelumnya telah berhasil akan dicatat di excel serta netmask 
 ### Config Cisco Packet Tracer
 
 ### Routing
+![](img/CIDR/r.1.png)
+![](img/CIDR/r.2.png)
+![](img/CIDR/r.3.png)
+![](img/CIDR/r.4.png)
+![](img/CIDR/r.5.png)
 
 ### Testing
 Router - Router 
