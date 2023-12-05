@@ -76,21 +76,18 @@ Penggabungan yang sebelumnya telah berhasil akan dicatat di excel serta netmask 
     ```
     IPv4 Address  : 10.8.24.1
     Subnet Mask   : 255.255.248.0
-
     ```
 
   - AppetitRegion (Client)
     ```
     IPv4 Address  : 10.8.24.2
     Subnet Mask   : 255.255.248.0
-
     ```
 
   - LaubHills (Client)
     ```
     IPv4 Address  : 10.8.24.3
     Subnet Mask   : 255.255.248.0
-
     ```
 
 - A2
@@ -98,14 +95,12 @@ Penggabungan yang sebelumnya telah berhasil akan dicatat di excel serta netmask 
     ```
     IPv4 Address  : 10.8.12.1
     Subnet Mask   : 255.255.252.0
-
     ```
 
   - RorhRoad (Client)
     ```
     IPv4 Address  : 10.8.12.2
     Subnet Mask   : 255.255.252.0
-
     ```
 
 - A3
@@ -113,20 +108,72 @@ Penggabungan yang sebelumnya telah berhasil akan dicatat di excel serta netmask 
     ```
     IPv4 Address  : 10.8.0.2
     Subnet Mask   : 255.255.255.248
-
     ```
 
   - Schwer Mountains (Client)
     ```
     IPv4 Address  : 10.8.0.1
     Subnet Mask   : 255.255.255.248
-
     ```
 
 - A4
+  - Heiter (Router)
+    ```
+    IPv4 Address  : 10.15.128.1
+    Subnet Mask   : 255.255.255.0
+    ```
+
+  - RiegelCanyon (Client)
+    ```
+    IPv4 Address  : 10.15.128.2
+    Subnet Mask   : 255.255.255.0
+    ```
+
+  - Sein (Server)
+    ```
+    IPv4 Address  : 10.15.128.3
+    Subnet Mask   : 255.255.255.0
+    ```
+
 - A5
+  - Fern (Router)
+    ```
+    IPv4 Address  : 10.8.15.253
+    Subnet Mask   : 255.255.255.252
+    ```
+
+  - Flamme (Router)
+    ```
+    IPv4 Address  : 10.8.15.254
+    Subnet Mask   : 255.255.255.252
+    ```
+
 - A6
+  - Flamme (Router)
+    ```
+    IPv4 Address  : 10.8.0.14
+    Subnet Mask   : 255.255.255.252
+    ```
+
+  - Himmel (Router)
+    ```
+    IPv4 Address  : 10.8.0.13
+    Subnet Mask   : 255.255.255.252
+    ```
+
 - A7
+  - Flamme (Router)
+    ```
+    IPv4 Address  : 10.8.63.253
+    Subnet Mask   : 255.255.255.252
+    ```
+
+  - Frieren (Router)
+    ```
+    IPv4 Address  : 10.8.63.254
+    Subnet Mask   : 255.255.255.252
+    ```
+
 - A8
 - A9
 - A10
