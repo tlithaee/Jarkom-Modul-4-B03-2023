@@ -20,11 +20,13 @@ Berikut adalah laporan resmi untuk praktikum modul 4 jarkom.
   - [Penggabungan IP](#penggabungan-ip)
   - [Tree](#tree-1)
   - [Pembagian IP](#pembagian-ip-1)
+  - [Routing](#routing-1)
   - [Testing](#testing-1)
 
 ## Topologi GNS VLSM 
 
-## Topologi PKT CIDR
+## Topologi Cisco Packet Tracer CIDR
+![](img/CIDR/topologi.png)
 
 ## Rute
 
@@ -36,3 +38,25 @@ Berikut adalah laporan resmi untuk praktikum modul 4 jarkom.
 ### Testing
 
 ## CIDR
+### Tree
+Berikut adalah pembagian tree CIDR. IP didapatkan dari perhitungan melalui [Visual Subnet Calculator](https://www.davidc.net/sites/default/subnets/subnets.html)
+
+![](img/CIDR/tree.jpg)
+
+### Pembagian IP
+Dari IP yang telah diketahui sebelumnya, dimasukkan kedalam file excel agar lebih teratur.
+
+![](img/CIDR/ip.png)
+
+### Penggabungan
+Penggabungan yang sebelumnya telah berhasil akan dicatat di excel serta netmask tiap subnet yang ada.
+
+![](img/CIDR/gabung.png)
+
+![](img/CIDR/gabung(1).png)
+
+### Config Cisco Packet Tracer
+
+### Routing
+
+### Testing
