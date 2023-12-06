@@ -40,7 +40,7 @@ Berikut ini adalah grouping subnet, terdapat 21 subnet pada topologi ini. Dimana
 ![gambar](https://github.com/tlithaee/Jarkom-Modul-4-B03-2023/raw/main/img/VLSM/topologi%20GNS3%20VLSM.png)
 
 ### Tree
-Berikut merupakan tree perhitungan untuk pembagian IP VLSM, dimana dimulai dari /19 yang merupakan length untuk keseluruhan IP yang dibutuhkan seuruh subnet.
+Berikut merupakan tree perhitungan untuk pembagian IP VLSM, dimana dimulai dari /19 yang merupakan length untuk keseluruhan IP yang dibutuhkan seluruh subnet.
 
 Untuk gambar tree yang lebih jelas lihat [disini](https://miro.com/app/board/uXjVNItkd-k=/).
 
