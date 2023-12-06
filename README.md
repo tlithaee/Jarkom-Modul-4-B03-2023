@@ -65,6 +65,8 @@ iface eth3 inet static
     netmask 255.255.255.252
 ```
 
+Untuk menentukan address masing masing eth suatu node, bisa dilakukan dengan melihat subnetnya dan lihat dari NIDnya. Tetapi tidak bisa menggunakan NID, sehingga gunakan IP selanjutnya. Misal untuk Aura, eth1 merupakan bagian subnet A12, memiliki NID 10.10.24.128, sehingga addressnya menjadi 10.10.24.129 dan netmasknya 255.255.255.252. Untuk eth2, merupkan bagian subnet
+
 #### Frieren
 ```
 auto eth0
@@ -394,7 +396,8 @@ iface eth0 inet static
 #### Aura
 ```shell
 # ke arah frieren
-route add -net 10.10.24.64 netmask 255.255.255.224 gw 10.10.24.126
+# gateway menggunakan eth0 dari frieren
+route add -net 10.10.24.64 netmask 255.255.255.224 gw 10.10.24.126 
 route add -net 10.10.24.120 netmask 255.255.255.252 gw 10.10.24.126
 route add -net 10.10.8.0 netmask 255.255.255.252 gw 10.10.24.126
 route add -net 10.10.0.0 netmask 255.255.248.0 gw 10.10.24.126
@@ -403,10 +406,12 @@ route add -net 10.10.24.112 netmask 255.255.255.252 gw 10.10.24.126
 route add -net 10.10.24.96 netmask 255.255.255.248 gw 10.10.24.126
 
 # ke arah denken
-route add -net 10.10.22.0 netmask 255.255.255.0 gw 10.10.24.150
+# gateway menggunakan eth0 dari denken
+route add -net 10.10.22.0 netmask 255.255.255.0 gw 10.10.24.150 
 
 # ke arah eisen
-route add -net 10.10.24.140 netmask 255.255.255.252 gw 10.10.24.130
+# gateway menggunakan eth0 dari eisen
+route add -net 10.10.24.140 netmask 255.255.255.252 gw 10.10.24.130 
 route add -net 10.10.24.104 netmask 255.255.255.252 gw 10.10.24.130
 route add -net 10.10.24.132 netmask 255.255.255.252 gw 10.10.24.130
 route add -net 10.10.23.0 netmask 255.255.255.0 gw 10.10.24.130
