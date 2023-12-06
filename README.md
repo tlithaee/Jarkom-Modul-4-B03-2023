@@ -30,9 +30,16 @@ Berikut adalah laporan resmi untuk praktikum modul 4 jarkom.
 
 ## Rute
 
-### VLSM
 
-### CIDR
+## VLSM
+
+### Tree
+### Pembagian IP
+### Config GNS3
+### Routing
+### Testing
+
+## CIDR
 ![a](image-1.png)
 ![b](img/CIDR/b.png)
 ![c](img/CIDR/c.png)
@@ -44,14 +51,6 @@ Berikut adalah laporan resmi untuk praktikum modul 4 jarkom.
 ![i](img/CIDR/i.png)
 ![j](img/CIDR/j.png)
 
-## VLSM
-### Tree
-### Pembagian IP
-### Config GNS3
-### Routing
-### Testing
-
-## CIDR
 ### Tree
 Berikut adalah pembagian tree CIDR. IP didapatkan dari perhitungan melalui [Visual Subnet Calculator](https://www.davidc.net/sites/default/subnets/subnets.html)
 
