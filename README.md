@@ -35,12 +35,20 @@ Berikut adalah laporan resmi untuk praktikum modul 4 jarkom.
 Untuk menghitung jumlah IP yang dibutuhkan pada tiap subnet, untuk 1 router akan membutuhkan 1 IP, 1 server membutuhkan 1 IP, masing-masing client menyesuaikan dengan jumlah hostnya, dan untuk switch tidak memerlukan IP. Sebagai contoh, pada A1, terdiri dari 2 client yang masing-masing memiliki 397 dan 625 host, lalu terdapat 1 router, sehingga total host dari kedua client akan ditambah 1.
 
 ## VLSM
+Berikut ini adalah grouping subnet, terdapat 21 subnet pada topologi ini. Dimana di tiap subnet dapat terdiri dari router dan router, router dan client, router dan server, atau gabungan antara router, server, dan client.
+
 ![gambar](https://github.com/tlithaee/Jarkom-Modul-4-B03-2023/raw/main/img/VLSM/topologi%20GNS3%20VLSM.png)
 
 ### Tree
+Berikut merupakan tree perhitungan untuk pembagian IP VLSM, dimana dimulai dari /19 yang merupakan length untuk keseluruhan IP yang dibutuhkan seuruh subnet.
+
+Untuk gambar tree yang lebih jelas lihat [disini](https://miro.com/app/board/uXjVNItkd-k=/).
+
 ![gambar](https://github.com/tlithaee/Jarkom-Modul-4-B03-2023/raw/main/img/VLSM/Tree%20VLSM%20-%20Tree%20VLSM.jpg)
 
 ### Pembagian IP
+Berikut adalah hasil pembagian IP dari tree yang sudah dibuat dan direkap pada tabel di bawah:
+
 ![gambar](https://github.com/tlithaee/Jarkom-Modul-4-B03-2023/raw/main/img/VLSM/pembagian%20IP.png)
 
 ### Config GNS3
@@ -491,24 +499,31 @@ route add -net 10.10.12.0 netmask 255.255.252.0 gw 10.10.24.142
 
 ### Testing
 #### Sein ke Richter (Server ke Server)
+
 ![Alt text](https://github.com/tlithaee/Jarkom-Modul-4-B03-2023/blob/main/img/VLSM/testing1.png)
 
 #### Granzchannel ke TurkRegion (Client ke Client)
+
 ![Alt text](https://github.com/tlithaee/Jarkom-Modul-4-B03-2023/blob/main/img/VLSM/testing2.png)
 
 #### RiegelCanyon ke Aura (Client ke Router Utama)
+
 ![Alt text](https://github.com/tlithaee/Jarkom-Modul-4-B03-2023/blob/main/img/VLSM/testing3.png)
 
 #### Fern ke Linie (Router ke Router)
+
 ![Alt text](https://github.com/tlithaee/Jarkom-Modul-4-B03-2023/blob/main/img/VLSM/testing4.png)
 
 #### RoyalCapital ke Laubhills (Client ke Client)
+
 ![Alt text](https://github.com/tlithaee/Jarkom-Modul-4-B03-2023/blob/main/img/VLSM/testing5.png)
 
 #### Heiter ke Denken (Router ke Router)
+
 ![Alt text](https://github.com/tlithaee/Jarkom-Modul-4-B03-2023/blob/main/img/VLSM/testing6.png)
 
 #### ScwherMountains ke Lugner (Client ke Router)
+
 ![Alt text](https://github.com/tlithaee/Jarkom-Modul-4-B03-2023/blob/main/img/VLSM/testing7.png)
 
 ## CIDR
