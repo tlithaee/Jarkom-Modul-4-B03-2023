@@ -24,6 +24,7 @@ Berikut adalah laporan resmi untuk praktikum modul 4 jarkom.
   - [Testing](#testing-1)
 
 ## Topologi GNS VLSM 
+![gambar](https://github.com/tlithaee/Jarkom-Modul-4-B03-2023/raw/main/img/topologi%20GNS3.png)
 
 ## Topologi Cisco Packet Tracer CIDR
 ![](img/CIDR/topologi.png)
