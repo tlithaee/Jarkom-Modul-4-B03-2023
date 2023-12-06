@@ -65,7 +65,9 @@ iface eth3 inet static
     netmask 255.255.255.252
 ```
 
-Untuk menentukan address masing masing eth suatu node, bisa dilakukan dengan melihat subnetnya dan lihat dari NIDnya. Tetapi tidak bisa menggunakan NID, sehingga gunakan IP selanjutnya. Misal untuk Aura, eth1 merupakan bagian subnet A12, memiliki NID 10.10.24.128, sehingga addressnya menjadi 10.10.24.129 dan netmasknya 255.255.255.252. Untuk eth2, merupkan bagian subnet
+Untuk menentukan address masing masing eth suatu node, bisa dilakukan dengan melihat subnetnya dan lihat dari NIDnya. Tetapi tidak bisa menggunakan NID, sehingga gunakan IP selanjutnya. Misal untuk Aura, eth1 merupakan bagian subnet A12, memiliki NID 10.10.24.128, sehingga addressnya menjadi 10.10.24.129 dan netmasknya 255.255.255.252. Untuk eth2, merupakan bagian subnet A18, memiliki NID 10.10.24.148, sehingga addressnya menjadi 10.10.24.149 dan netmasknya 255.255.255.252. Dan untuk eth3, merupakan bagian subnet A10, memiliki NID 10.10.24.124, sehingga addressnya menjadi 10.10.24.125 dan netmasknya 255.255.255.252.
+
+Lalu untuk eth0 Frieren yang juga merupakan bagian dari subnet 10, akan memiliki address 10.10.24.125 (melanjutkan IP dari eth3 Aura). Sedangkan untuk gateway yang hanya digunakan pada eth0, menggunakan address eth yang terhubung dengan eth0  node tersebut. Misal untuk gateway pada eth0 Frieren, gatewaynya adalah 10.10.24.125 yang merupakan address eth3 dari node Aura. Dan begitu seterusnya untuk node yang lain.
 
 #### Frieren
 ```
@@ -393,6 +395,9 @@ iface eth0 inet static
 ```
 
 ### Routing
+
+Pada routing, perintah `route add` digunakan untuk menambahkan rute baru ke tabel routing sistem. Dalam setiap perintah, `-net` menandakan jaringan tujuan (menggunakan NID), `netmask` menentukan pembagian subnet, dan `gw` menunjukkan alamat gateway yang harus digunakan untuk mengarahkan lalu lintas ke jaringan tersebut. Lalu default gateway diatur dengan netmask 0.0.0.0, yang berarti bahwa jika tidak ada rute lain yang cocok, lalu lintas akan diarahkan melalui gateway tersebut. 
+
 #### Aura
 ```shell
 # ke arah frieren
@@ -489,8 +494,10 @@ route add -net 10.10.12.0 netmask 255.255.252.0 gw 10.10.24.142
 ![Alt text](https://github.com/tlithaee/Jarkom-Modul-4-B03-2023/blob/main/img/VLSM/testing1.png)
 
 #### Granzchannel ke TurkRegion (Client ke Client)
+![Alt text](https://github.com/tlithaee/Jarkom-Modul-4-B03-2023/blob/main/img/VLSM/testing2.png)
 
 #### RiegelCanyon ke Aura (Client ke Router Utama)
+![Alt text](https://github.com/tlithaee/Jarkom-Modul-4-B03-2023/blob/main/img/VLSM/testing3.png)
 
 #### Fern ke Linie (Router ke Router)
 ![Alt text](https://github.com/tlithaee/Jarkom-Modul-4-B03-2023/blob/main/img/VLSM/testing4.png)
@@ -502,7 +509,7 @@ route add -net 10.10.12.0 netmask 255.255.252.0 gw 10.10.24.142
 ![Alt text](https://github.com/tlithaee/Jarkom-Modul-4-B03-2023/blob/main/img/VLSM/testing6.png)
 
 #### ScwherMountains ke Lugner (Client ke Router)
-
+![Alt text](https://github.com/tlithaee/Jarkom-Modul-4-B03-2023/blob/main/img/VLSM/testing7.png)
 
 ## CIDR
 ![a](image-1.png)
