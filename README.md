@@ -175,19 +175,202 @@ Penggabungan yang sebelumnya telah berhasil akan dicatat di excel serta netmask 
     ```
 
 - A8
+  - Lawine (Router)
+    ```
+    IPv4 Address  : 10.15.135.195
+    Subnet Mask   : 255.255.255.192
+    ```
+
+  - Heiter (Router)
+    ```
+    IPv4 Address  : 10.15.135.193
+    Subnet Mask   : 255.255.255.192
+    
+
+  - BredtRegion (Client)
+    ```
+    IPv4 Address  : 10.15.135.194
+    Subnet Mask   : 255.255.255.192
+    
 - A9
+  - Frieren (Router)
+    ```
+    IPv4 Address  : 10.8.127.225
+    Subnet Mask   : 255.255.255.224
+    ```
+  - LakeKorridor (Client)
+    ```
+    IPv4 Address  : 10.8.63.254
+    Subnet Mask   : 255.255.255.224
+    ```
+
 - A10
+  - Frieren (Router)
+    ```
+    IPv4 Address  : 10.8.255.253
+    Subnet Mask   : 255.255.255.252
+    ```
+
+  - Aura (Router)
+    ```
+    IPv4 Address  : 10.8.255.254
+    Subnet Mask   : 255.255.255.252
+    ```
+
 - A11
+  - Eisen (Router)
+    ```
+    IPv4 Address  : 10.15.192.1
+    Subnet Mask   : 255.255.255.248
+    ```
+
+  - Revolte (Server)
+    ```
+    IPv4 Address  : 10.15.192.2
+    Subnet Mask   : 255.255.255.248
+    
+
+  - Richter (Server)
+    ```
+    IPv4 Address  : 10.15.192.3
+    Subnet Mask   : 255.255.255.248
+    ```
+
 - A12
+  - Aura (Router)
+    ```
+    IPv4 Address  : 10.15.0.1
+    Subnet Mask   : 255.255.255.252
+    ```
+
+  - Eisen (Router)
+    ```
+    IPv4 Address  : 10.15.0.2
+    Subnet Mask   : 255.255.255.252
+    ```
+
 - A13
+  - Eisen (Router)
+    ```
+    IPv4 Address  : 10.15.192.1
+    Subnet Mask   : 255.255.255.248
+    ```
+
+  - Stark (Server)
+    ```
+    IPv4 Address  : 10.15.192.2
+    Subnet Mask   : 255.255.255.248
+    ```
+
 - A14
+  - Eisen (Router)
+    ```
+    IPv4 Address  : 10.15.240.2
+    Subnet Mask   : 255.255.255.252
+    ```
+
+  - Lugner (Router)
+    ```
+    IPv4 Address  : 10.15.240.1
+    Subnet Mask   : 255.255.255.252
+    ```
+
 - A15
+  - Eisen (Router)
+    ```
+    IPv4 Address  : 10.15.191.254
+    Subnet Mask   : 255.255.255.252
+    ```
+
+  - Linie (Router)
+    ```
+    IPv4 Address  : 10.15.191.253
+    Subnet Mask   : 255.255.255.252
+    ```
+
 - A16
+  - Lawine (Router)
+    ```
+    IPv4 Address  : 10.15.143.254
+    Subnet Mask   : 255.255.255.252
+    ```
+
+  - Linie (Router)
+    ```
+    IPv4 Address  : 10.15.143.253
+    Subnet Mask   : 255.255.255.252
+    ```
+
 - A17
+  - Linie (Router)
+    ```
+    IPv4 Address  : 10.15.158.1
+    Subnet Mask   : 255.255.254.0
+    ```
+
+  - GranzChannel (Client)
+    ```
+    IPv4 Address  : 10.15.158.2
+    Subnet Mask   : 255.255.254.0
+    ```
+
 - A18
+  - Aura (Router)
+    ```
+    IPv4 Address  : 10.14.0.1
+    Subnet Mask   : 255.255.255.252
+    ```
+
+  - Denken (Router)
+    ```
+    IPv4 Address  : 10.14.0.2
+    Subnet Mask   : 255.255.255.252
+    ```
+
 - A19
+  - Denken (Router)
+    ```
+    IPv4 Address  : 10.12.0.1
+    Subnet Mask   : 255.255.255.0
+    ```
+
+  - RoyalCapital (Client)
+    ```
+    IPv4 Address  : 10.12.0.2
+    Subnet Mask   : 255.255.255.0
+    
+
+  - WilleRegion (Client)
+    ```
+    IPv4 Address  : 10.12.0.3
+    Subnet Mask   : 255.255.255.0
+    ```
+
 - A20
+  - Lugner (Router)
+    ```
+    IPv4 Address  : 10.15.248.1
+    Subnet Mask   : 255.255.255.0
+    ```
+
+  - TurkRegion (Client)
+    ```
+    IPv4 Address  : 10.15.248.2
+    Subnet Mask   : 255.255.255.0
+    ```
+
 - A21
+  - Lugner (Router)
+    ```
+    IPv4 Address  : 10.15.255.1
+    Subnet Mask   : 255.255.255.0
+    ```
+
+  - GrobeForest (Client)
+    ```
+    IPv4 Address  : 10.15.255.2
+    Subnet Mask   : 255.255.255.0
+    ```
 
 ### Routing
 ![](img/CIDR/r.1.png)
