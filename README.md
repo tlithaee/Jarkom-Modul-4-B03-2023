@@ -7,8 +7,8 @@ Berikut adalah laporan resmi untuk praktikum modul 4 jarkom.
 |Syarifah Talitha Erfany | 5025211175 |
 
 ## Daftar Isi
-  - [Topologi PKT CIDR](#topologi-pkt-cidr)
   - [Topologi GNS VLSM](#topologi-gns-vlsm)
+  - [Topologi Cisco Packet Tracer CIDR](#topologi-cisco-packet-tracer-cidr)
   - [Rute](#rute)
 - [VLSM](#vlsm)
   - [Tree](#tree)
