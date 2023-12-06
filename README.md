@@ -32,6 +32,8 @@ Berikut adalah laporan resmi untuk praktikum modul 4 jarkom.
 ## Rute
 ![gambar](https://github.com/tlithaee/Jarkom-Modul-4-B03-2023/raw/main/img/Rute.png)
 
+Untuk menghitung jumlah IP yang dibutuhkan pada tiap subnet, untuk 1 router akan membutuhkan 1 IP, 1 server membutuhkan 1 IP, masing-masing client menyesuaikan dengan jumlah hostnya, dan untuk switch tidak memerlukan IP. Sebagai contoh, pada A1, terdiri dari 2 client yang masing-masing memiliki 397 dan 625 host, lalu terdapat 1 router, sehingga total host dari kedua client akan ditambah 1.
+
 ## VLSM
 ![gambar](https://github.com/tlithaee/Jarkom-Modul-4-B03-2023/raw/main/img/topologi%20GNS3%20VLSM.png)
 
@@ -42,7 +44,441 @@ Berikut adalah laporan resmi untuk praktikum modul 4 jarkom.
 ![gambar](https://github.com/tlithaee/Jarkom-Modul-4-B03-2023/raw/main/img/pembagian%20IP.png)
 
 ### Config GNS3
+#### Aura
+```
+auto eth0
+iface eth0 inet dhcp
+
+auto eth1
+iface eth1 inet static
+    address 10.10.24.129
+    netmask 255.255.255.252
+
+auto eth2
+iface eth2 inet static
+    address 10.10.24.149
+    netmask 255.255.255.252
+
+auto eth3
+iface eth3 inet static
+    address 10.10.24.125
+    netmask 255.255.255.252
+```
+
+#### Frieren
+```
+auto eth0
+iface eth0 inet static
+    address 10.10.24.126
+    netmask 255.255.255.252
+    gateway 10.10.24.125
+
+auto eth1
+iface eth1 inet static
+    address 10.10.24.121
+    netmask 255.255.255.252
+
+auto eth2
+iface eth2 inet static
+    address 10.10.24.65
+    netmask 255.255.255.224
+
+```
+
+#### LakeKorridor
+```
+auto eth0
+iface eth0 inet static
+	address 10.10.24.66
+	netmask 255.255.255.224
+	gateway 10.10.24.65
+```
+
+#### Flamme
+```
+auto eth0
+iface eth0 inet static
+	address 10.10.24.122
+	netmask 255.255.255.252
+        gateway 10.10.24.121
+
+auto eth1
+iface eth1 inet static
+	address 10.10.24.113
+	netmask 255.255.255.252
+
+auto eth2
+iface eth2 inet static
+	address 10.10.24.117
+	netmask 255.255.255.252
+
+auto eth3
+iface eth3 inet static
+	address 10.10.8.1
+	netmask 255.255.255.0
+```
+
+#### RohrRoad
+```
+auto eth0
+iface eth0 inet static
+	address 10.10.8.2
+	netmask 255.255.255.0
+	gateway 10.10.8.1
+```
+
+#### Fern
+```
+auto eth0
+iface eth0 inet static
+    address 10.10.24.114
+    netmask 255.255.255.252
+    gateway 10.10.24.113
+
+auto eth1
+iface eth1 inet static
+    address 10.10.0.1
+    netmask 255.255.248.0
+```
+
+#### AppettRegion
+```
+auto eth0
+iface eth0 inet static
+    address 10.10.0.2
+    netmask 255.255.248.0
+    gateway 10.10.0.1
+```
+
+#### LaubHills
+```
+auto eth0
+iface eth0 inet static
+    address 10.10.0.3
+    netmask 255.255.248.0
+    gateway 10.10.0.1
+```
+
+#### Himmel
+```
+auto eth0
+iface eth0 inet static
+	address 10.10.24.118
+	netmask 255.255.255.252
+	gateway 10.10.24.117
+
+auto eth1
+iface eth1 inet static
+	address 10.10.24.97
+	netmask 255.255.255.248
+```
+
+#### SchwerMountains
+```
+auto eth0
+iface eth0 inet static
+    address 10.10.24.98
+    netmask 255.255.248.0
+    gateway 10.10.24.97
+```
+
+#### Denken
+```
+auto eth0
+iface eth0 inet static
+	address 10.10.24.150
+	netmask 255.255.255.252
+        gateway 10.10.24.149
+
+auto eth1
+iface eth1 inet static
+	address 10.10.22.1
+	netmask 255.255.255.0
+```
+
+#### RoyalCapital
+```
+auto eth0
+iface eth0 inet static
+	address 10.10.22.2
+	netmask 255.255.255.0
+	gateway 10.10.22.1
+```
+
+#### WilleRegion
+```
+auto eth0
+iface eth0 inet static
+	address 10.10.22.3
+	netmask 255.255.255.0
+	gateway 10.10.22.1
+```
+
+#### Eisen
+```
+auto eth0
+iface eth0 inet static
+    address 10.10.24.130
+    netmask 255.255.255.252
+    gateway 10.10.24.129
+
+auto eth1
+iface eth1 inet static
+	address 10.10.24.141
+	netmask 255.255.255.252
+
+auto eth2
+iface eth2 inet static
+	address 10.10.24.105
+	netmask 255.255.255.248
+
+auto eth3
+iface eth3 inet static
+	address 10.10.24.133
+	netmask 255.255.255.252
+
+auto eth4
+iface eth4 inet static
+	address 10.10.24.137
+	netmask 255.255.255.252
+```
+
+#### Stark
+```
+auto eth0
+iface eth0 inet static
+	address 10.10.24.134
+	netmask 255.255.255.252
+	gateway 10.10.24.133
+```
+
+#### Richter
+```
+auto eth0
+iface eth0 inet static
+	address 10.10.24.106
+	netmask 255.255.255.248
+	gateway 10.10.24.105
+```
+
+#### Revolte
+```
+auto eth0
+iface eth0 inet static
+	address 10.10.24.107
+	netmask 255.255.255.248
+	gateway 10.10.24.105
+```
+
+#### Lugner
+```
+auto eth0
+iface eth0 inet static
+	address 10.10.24.138
+	netmask 255.255.255.252
+        gateway 10.10.24.137
+
+auto eth1
+iface eth1 inet static
+	address 10.10.16.1
+	netmask 255.255.255.0
+
+auto eth2
+iface eth2 inet static
+	address 10.10.23.1
+	netmask 255.255.252.0
+```
+
+#### TurkRegion
+```
+auto eth0
+iface eth0 inet static
+	address 10.10.16.2
+	netmask 255.255.255.0
+	gateway 10.10.16.1
+```
+
+#### GrobeForest
+```
+auto eth0
+iface eth0 inet static
+	address 10.10.23.2
+	netmask 255.255.252.0
+	gateway 10.10.23.1
+```
+
+#### Linie
+```
+auto eth0
+iface eth0 inet static
+	address 10.10.24.142
+	netmask 255.255.255.252
+        gateway 10.10.24.141
+
+auto eth1
+iface eth1 inet static
+	address 10.10.24.145
+	netmask 255.255.255.252
+
+auto eth2
+iface eth2 inet static
+	address 10.10.20.1
+	netmask 255.255.254.0
+```
+
+#### GranzChannel
+```
+auto eth0
+iface eth0 inet static
+	address 10.10.20.2
+	netmask 255.255.254.0
+	gateway 10.10.20.1
+```
+
+#### Lawine
+```
+auto eth0
+iface eth0 inet static
+	address 10.10.24.146
+	netmask 255.255.255.252
+        gateway 10.10.24.145
+
+auto eth1
+iface eth1 inet static
+	address 10.10.24.1
+	netmask 255.255.255.192
+```
+
+#### BredtRegion
+```
+auto eth0
+iface eth0 inet static
+	address 10.10.24.3
+	netmask 255.255.255.192
+	gateway 10.10.24.1
+```
+
+#### Heiter
+```
+auto eth0
+iface eth0 inet static
+	address 10.10.24.2
+	netmask 255.255.255.192
+	gateway 10.10.24.1
+
+auto eth1
+iface eth1 inet static
+	address 10.10.12.1
+	netmask 255.255.252.0
+```
+
+#### Sein
+```
+auto eth0
+iface eth0 inet static
+	address 10.10.12.3
+	netmask 255.255.255.192
+	gateway 10.10.12.1
+```
+
+#### RiegelCanyon
+```
+auto eth0
+iface eth0 inet static
+	address 10.10.12.2
+	netmask 255.255.255.192
+	gateway 10.10.12.1
+```
+
 ### Routing
+#### Aura
+```shell
+# ke arah frieren
+route add -net 10.10.24.64 netmask 255.255.255.224 gw 10.10.24.126
+route add -net 10.10.24.120 netmask 255.255.255.252 gw 10.10.24.126
+route add -net 10.10.8.0 netmask 255.255.255.252 gw 10.10.24.126
+route add -net 10.10.0.0 netmask 255.255.248.0 gw 10.10.24.126
+route add -net 10.10.24.116 netmask 255.255.255.252 gw 10.10.24.126
+route add -net 10.10.24.112 netmask 255.255.255.252 gw 10.10.24.126
+route add -net 10.10.24.96 netmask 255.255.255.248 gw 10.10.24.126
+
+# ke arah denken
+route add -net 10.10.22.0 netmask 255.255.255.0 gw 10.10.24.150
+
+# ke arah eisen
+route add -net 10.10.24.140 netmask 255.255.255.252 gw 10.10.24.130
+route add -net 10.10.24.104 netmask 255.255.255.252 gw 10.10.24.130
+route add -net 10.10.24.132 netmask 255.255.255.252 gw 10.10.24.130
+route add -net 10.10.23.0 netmask 255.255.255.0 gw 10.10.24.130
+route add -net 10.10.16.0 netmask 255.255.255.0 gw 10.10.24.130
+route add -net 10.10.24.136 netmask 255.255.255.252 gw 10.10.24.130
+route add -net 10.10.24.144 netmask 255.255.255.252 gw 10.10.24.130
+route add -net 10.10.20.0 netmask 255.255.255.252 gw 10.10.24.130
+route add -net 10.10.24.0 netmask 255.255.255.192 gw 10.10.24.130
+```
+
+#### Denken
+```shell
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 10.10.24.149
+```
+
+#### Lugner
+```
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 10.10.24.137
+```
+
+#### Linie
+```
+route add -net 10.10.24.0 netmask 255.255.255.192 gw 10.10.24.146
+route add -net 10.10.12.0 netmask 255.255.252.0 gw 10.10.24.146
+```
+
+#### Lawine
+```
+route add -net 10.10.12.0 netmask 255.255.252.0 gw 10.10.24.2
+```
+
+#### Heiter
+```
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 10.10.24.1
+```
+
+#### Himmel
+```
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 10.10.24.122
+```
+
+#### Flamme
+```
+route add -net 10.10.0.0 netmask 255.255.248.0 gw 10.10.24.114
+route add -net 10.10.24.96 netmask 255.255.255.248 gw 10.10.24.118
+```
+
+#### Fern
+```
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 10.10.24.122
+```
+
+#### Frieren
+```
+route add -net 10.10.8.0 netmask 255.255.255.252 gw 10.10.24.122
+route add -net 10.10.0.0 netmask 255.255.248.0 gw 10.10.24.122
+route add -net 10.10.24.112 netmask 255.255.255.252 gw 10.10.24.122
+route add -net 10.10.24.116 netmask 255.255.255.252 gw 10.10.24.122
+route add -net 10.10.24.96 netmask 255.255.255.248 gw 10.10.24.122
+```
+
+#### Eisen
+```
+route add -net 10.10.23.0 netmask 255.255.255.0 gw 10.10.24.138
+route add -net 10.10.16.0 netmask 255.255.255.0 gw 10.10.24.138
+
+route add -net 10.10.24.144 netmask 255.255.255.252 gw 10.10.24.142
+route add -net 10.10.20.0 netmask 255.255.255.252 gw 10.10.24.142
+route add -net 10.10.24.0 netmask 255.255.255.192 gw 10.10.24.142
+route add -net 10.10.12.0 netmask 255.255.252.0 gw 10.10.24.142
+```
+
 ### Testing
 
 ## CIDR
