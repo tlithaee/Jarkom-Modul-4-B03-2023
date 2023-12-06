@@ -24,24 +24,24 @@ Berikut adalah laporan resmi untuk praktikum modul 4 jarkom.
   - [Testing](#testing-1)
 
 ## Topologi GNS VLSM 
-![gambar](https://github.com/tlithaee/Jarkom-Modul-4-B03-2023/raw/main/img/topologi%20GNS3.png)
+![gambar](https://github.com/tlithaee/Jarkom-Modul-4-B03-2023/raw/main/img/VLSM/topologi%20GNS3.png)
 
 ## Topologi Cisco Packet Tracer CIDR
 ![](img/CIDR/topologi.png)
 
 ## Rute
-![gambar](https://github.com/tlithaee/Jarkom-Modul-4-B03-2023/raw/main/img/Rute.png)
+![gambar](https://github.com/tlithaee/Jarkom-Modul-4-B03-2023/raw/main/img/VLSM/Rute.png)
 
 Untuk menghitung jumlah IP yang dibutuhkan pada tiap subnet, untuk 1 router akan membutuhkan 1 IP, 1 server membutuhkan 1 IP, masing-masing client menyesuaikan dengan jumlah hostnya, dan untuk switch tidak memerlukan IP. Sebagai contoh, pada A1, terdiri dari 2 client yang masing-masing memiliki 397 dan 625 host, lalu terdapat 1 router, sehingga total host dari kedua client akan ditambah 1.
 
 ## VLSM
-![gambar](https://github.com/tlithaee/Jarkom-Modul-4-B03-2023/raw/main/img/topologi%20GNS3%20VLSM.png)
+![gambar](https://github.com/tlithaee/Jarkom-Modul-4-B03-2023/raw/main/img/VLSM/topologi%20GNS3%20VLSM.png)
 
 ### Tree
-![gambar](https://github.com/tlithaee/Jarkom-Modul-4-B03-2023/raw/main/img/Tree%20VLSM%20-%20Tree%20VLSM.jpg)
+![gambar](https://github.com/tlithaee/Jarkom-Modul-4-B03-2023/raw/main/img/VLSM/Tree%20VLSM%20-%20Tree%20VLSM.jpg)
 
 ### Pembagian IP
-![gambar](https://github.com/tlithaee/Jarkom-Modul-4-B03-2023/raw/main/img/pembagian%20IP.png)
+![gambar](https://github.com/tlithaee/Jarkom-Modul-4-B03-2023/raw/main/img/VLSM/pembagian%20IP.png)
 
 ### Config GNS3
 #### Aura
@@ -418,7 +418,7 @@ route add -net 10.10.24.0 netmask 255.255.255.192 gw 10.10.24.130
 ```
 
 #### Denken
-```shell
+```
 route add -net 0.0.0.0 netmask 0.0.0.0 gw 10.10.24.149
 ```
 
@@ -480,6 +480,24 @@ route add -net 10.10.12.0 netmask 255.255.252.0 gw 10.10.24.142
 ```
 
 ### Testing
+#### Sein ke Richter (Server ke Server)
+![Alt text](image-3.png)
+
+#### Granzchannel ke TurkRegion (Client ke Client)
+
+#### RiegelCanyon ke Aura (Client ke Router Utama)
+
+#### Fern ke Linie (Router ke Router)
+![Alt text](image-4.png)
+
+#### RoyalCapital ke Laubhills (Client ke Client)
+![Alt text](image-5.png)
+
+#### Heiter ke Denken (Router ke Router)
+![Alt text](image-6.png)
+
+#### ScwherMountains ke Lugner (Client ke Router)
+
 
 ## CIDR
 ![a](image-1.png)
