@@ -29,12 +29,17 @@ Berikut adalah laporan resmi untuk praktikum modul 4 jarkom.
 ![](img/CIDR/topologi.png)
 
 ## Rute
-
+![gambar](https://github.com/tlithaee/Jarkom-Modul-4-B03-2023/raw/main/img/Rute.png)
 
 ## VLSM
+![gambar](https://github.com/tlithaee/Jarkom-Modul-4-B03-2023/raw/main/img/topologi%20GNS3%20VLSM.png)
 
 ### Tree
+![gambar](https://github.com/tlithaee/Jarkom-Modul-4-B03-2023/raw/main/img/Tree%20VLSM%20-%20Tree%20VLSM.jpg)
+
 ### Pembagian IP
+![gambar](https://github.com/tlithaee/Jarkom-Modul-4-B03-2023/raw/main/img/pembagian%20IP.png)
+
 ### Config GNS3
 ### Routing
 ### Testing
