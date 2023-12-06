@@ -481,20 +481,20 @@ route add -net 10.10.12.0 netmask 255.255.252.0 gw 10.10.24.142
 
 ### Testing
 #### Sein ke Richter (Server ke Server)
-![Alt text](image-3.png)
+![Alt text](https://github.com/tlithaee/Jarkom-Modul-4-B03-2023/blob/main/img/VLSM/testing1.png)
 
 #### Granzchannel ke TurkRegion (Client ke Client)
 
 #### RiegelCanyon ke Aura (Client ke Router Utama)
 
 #### Fern ke Linie (Router ke Router)
-![Alt text](image-4.png)
+![Alt text](https://github.com/tlithaee/Jarkom-Modul-4-B03-2023/blob/main/img/VLSM/testing4.png)
 
 #### RoyalCapital ke Laubhills (Client ke Client)
-![Alt text](image-5.png)
+![Alt text](https://github.com/tlithaee/Jarkom-Modul-4-B03-2023/blob/main/img/VLSM/testing5.png)
 
 #### Heiter ke Denken (Router ke Router)
-![Alt text](image-6.png)
+![Alt text](https://github.com/tlithaee/Jarkom-Modul-4-B03-2023/blob/main/img/VLSM/testing6.png)
 
 #### ScwherMountains ke Lugner (Client ke Router)
 
